@@ -1,34 +1,95 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
+body {
   margin: 0;
   padding: 0;
-  outline: none;
-  font-family: "Poppins", sans-serif;
-}
-body {
+  background-color: #111;
+  font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  overflow: hidden;
-}
-.container {
-  width: 330px;
-  background: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 50px 35px 10px 35px;
-}
-button {
-  margin-top: 20px;
-  width: 100%;
-  background-color: #d33f8d;
+  height: 100vh;
   color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
-button:hover {
-  background-color: #000;
+
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 80px;
+  margin-top: 0px;
+  color: #0ff;
+}
+
+.question_class {
+  padding: 20px 0px;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #111, #111) padding-box,
+    linear-gradient(90deg, #00f, #0ff) border-box;
+}
+
+.answer-button {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px auto;
+  margin-left: 30px;
+  padding: 15px;
+  width: 450px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  border-color:  blue;
+  background: rgb(0, 0, 0);
+  border: 3px solid transparent; /* Adjust border width as needed */
+  /* Padding settings */
+  padding: 20px; /* Adjust padding as needed */
+  /* background: linear-gradient(90deg, #111, #111) padding-box, linear-gradient(90deg, #00f, #0ff) border-box; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline;
+}
+
+.answer-button:hover {
+  box-shadow: 0 0 10px #00f, 0 0 20px #0ff, 0 0 30px #00f;
+}
+
+.answer-button:active {
+  background-color: red;
+}
+
+.next-button,
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(90deg, #00f, #0ff);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #00f, 0 0 15px #0ff;
+  transition: all 0.3s ease;
+}
+
+.next-button:hover,
+.restart-button:hover {
+  box-shadow: 0 0 10px #00f, 0 0 20px #0ff, 0 0 30px #00f;
+}
+
+.score-container {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #111, #111) padding-box,
+    linear-gradient(90deg, #00f, #0ff) border-box;
 }

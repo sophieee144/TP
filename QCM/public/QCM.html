@@ -8,15 +8,18 @@
   </head>
   <body>
     <div class="container">
+      <img src="../assets/background.jpg" alt="" />
       <h1>QCM Quiz</h1>
-      <div id="question-container"></div>
-      <button id="next-button" style="display: none">Next Question</button>
-      <div id="score-container" style="display: none">
-        <h2>Your Score: <span id="score"></span></h2>
-        <button id="restart-button">Restart Quiz</button>
+      <div id="question-container" class="question-container"></div>
+      <button id="next-button" class="next-button" style="display: none">
+        Next Question
+      </button>
+      <div id="score-container" class="score-container" style="display: none">
+        <h2>Your Score: <span id="score">0</span></h2>
+        <button id="restart-button" class="restart-button">Restart Quiz</button>
       </div>
     </div>
     <script src="qst.js"></script>
-    <script src="khra.js"></script>
+    <script src="QCM.js"></script>
   </body>
 </html>
