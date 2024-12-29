@@ -1,5 +1,89 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.quiz-container {
   text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.quiz-header {
+  font-size: 50px;
+  margin-top: 0px;
+  color: #0ff;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.option {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background-color: #e9ecef;
+}
+
+.option.selected {
+  background-color: #cfe2ff;
+  border-color: #0d6efd;
+}
+
+.option.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.option.incorrect {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.progress {
+  height: 10px;
+  margin-bottom: 20px;
+}
+
+.results {
+  text-align: center;
+}
+
+.result-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
